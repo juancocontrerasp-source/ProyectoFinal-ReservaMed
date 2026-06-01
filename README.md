@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ReservaMed
 
 ReservaMed es una aplicación web sencilla para gestionar reservas de citas médicas usando HTML, CSS y JavaScript puro.
@@ -50,3 +51,7 @@ Para revisar las pruebas, abrir la consola del navegador después de cargar `ind
 
 - Estudiante: [Nombre del Estudiante]
 - Curso: Proyecto final académico
+=======
+# ProyectoFinal-ReservaMed
+Sistema de Gestión de Citas Médicas desarrollado en Java utilizando Maven y JUnit 5.
+>>>>>>> bd5c77b38a4dfca671d2471549f4056d1aa1b51a
