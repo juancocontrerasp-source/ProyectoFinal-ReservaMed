@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReservaMed - Gestión de Citas Médicas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ReservaMed</h1>
+    <p>Gestiona las citas médicas de manera simple y confiable.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Registrar nueva cita</h2>
+      <form id="citaForm">
+        <div class="form-grid">
+          <label>
+            Nombre del paciente
+            <input type="text" id="nombrePaciente" name="nombrePaciente" placeholder="Ej. María Pérez" />
+          </label>
+          <label>
+            Documento
+            <input type="text" id="documentoPaciente" name="documentoPaciente" placeholder="Ej. 12345678" />
+          </label>
+          <label>
+            Teléfono
+            <input type="tel" id="telefonoPaciente" name="telefonoPaciente" placeholder="Ej. 3001234567" />
+          </label>
+          <label>
+            Correo
+            <input type="email" id="correoPaciente" name="correoPaciente" placeholder="ejemplo@dominio.com" />
+          </label>
+          <label>
+            Nombre del médico
+            <input type="text" id="nombreMedico" name="nombreMedico" placeholder="Ej. Dr. Gómez" />
+          </label>
+          <label>
+            Especialidad
+            <input type="text" id="especialidadMedico" name="especialidadMedico" placeholder="Ej. Cardiología" />
+          </label>
+          <label>
+            Fecha
+            <input type="date" id="fechaCita" name="fechaCita" />
+          </label>
+          <label>
+            Hora
+            <input type="time" id="horaCita" name="horaCita" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Registrar cita</button>
+          <span id="mensaje" class="mensaje"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Citas registradas</h2>
+      <div class="table-responsive">
+        <table id="tablaCitas">
+          <thead>
+            <tr>
+              <th>Paciente</th>
+              <th>Documento</th>
+              <th>Teléfono</th>
+              <th>Correo</th>
+              <th>Médico</th>
+              <th>Especialidad</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="citasBody">
+            <tr><td colspan="10" class="empty">No hay citas registradas.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>
